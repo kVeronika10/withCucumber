@@ -1,0 +1,91 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-11T10:03:12.618Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2442501400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.StepDefinitions.initialisation()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "I want to login with correct credentials",
+        "description": "",
+        "id": "i-want-to-test-authorisation;i-want-to-login-with-correct-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 671425400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.StepDefinitions.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 703997200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I go to main page",
+            "match": {
+              "location": "steps.StepDefinitions.iGoToMainPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 519999100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I login as \"admin\" with password \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"admin\"",
+                  "offset": 33
+                }
+              ],
+              "location": "steps.StepDefinitions.iLoginAsWithPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have been successfully logged",
+            "match": {
+              "location": "steps.StepDefinitions.iHaveBeenSuccessfullyLogged()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "I want to test authorisation",
+    "description": "",
+    "id": "i-want-to-test-authorisation",
+    "keyword": "Feature",
+    "uri": "file:src/test/forCucumber.feature",
+    "tags": []
+  }
+]
